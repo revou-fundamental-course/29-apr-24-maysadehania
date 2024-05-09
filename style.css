@@ -1,0 +1,154 @@
+body {
+  font-family: "Open Sans";
+  font-size: 22px;
+}
+
+header{
+display : flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+header nav a{
+border: 2px solid blue;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+#opening-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+}
+
+#testi-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height:600px;
+}
+#img-testi{
+  max-height: fit-content;
+}
+
+
+#testimonial{
+  padding-bottom: 30px;
+}
+
+#form {
+  background-color: lightgray;
+  padding: 25px;
+  max-height: 600px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+#form-input {
+   padding-bottom:100px
+}
+}
+
+@media screen and (max-width: 690px) {
+#form-input {
+   max-height: 50%;
+   padding-bottom:100px;
+}
+}
+
+#form-text {
+  padding-bottom: 30px;
+}
+
+#name,
+#email,
+#interest,
+#send{
+  border: 1px solid gray; 
+  border-radius: 4px;
+  height: 35px;
+  width: 100%; 
+}
+
+#form-input {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+#send-btn{
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+#benefits{
+  display:flex;
+  flex-direction:column;
+  
+}
+
+
+#our-package {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#our-package h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background-color: gray;
+  padding: 25px;
+}
+
+#packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+#package-info {
+  padding: 20px;
+  border-radius: 5px;
+  
+}
+
+#package-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#package-info p {
+  font-size: 16px;
+}
+
+
+#cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cta-btn{
+  padding: 25px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  
+}
+  

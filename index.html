@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Title</title>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="29-apr-24-maysadehania/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Open Sans";
+        font-size: 22px;
+      }
+      
+      header{
+      display : flex;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+      
+      header nav a{
+      border: 2px solid blue;
+      }
+      
+      #home {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #home-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      }
+
+      #opening-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Horizontally centers the content */
+        align-items: center; /* Vertically centers the content */
+      }
+
+      #testi-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:600px;
+      }
+      #img-testi{
+        max-height: fit-content;
+      }
+      
+
+      #testimonial{
+        padding-bottom: 30px;
+      }
+      
+      #form {
+        background-color: lightgray;
+        padding: 25px;
+        max-height: 600px;
+        box-sizing: border-box;
+      }
+      
+      @media screen and (max-width: 700px) {
+      #form-input {
+         padding-bottom:100px
+      }
+ 	}
+    
+    @media screen and (max-width: 690px) {
+      #form-input {
+         max-height: 50%;
+         padding-bottom:100px;
+      }
+ 	}
+
+      #form-text {
+        padding-bottom: 30px;
+      }
+
+      #name,
+      #email,
+      #interest,
+      #send{
+        border: 1px solid gray; 
+        border-radius: 4px;
+        height: 35px;
+        width: 100%; 
+      }
+
+      #form-input {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+      }
+
+      #send-btn{
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+      }
+
+      #benefits{
+        display:flex;
+        flex-direction:column;
+        
+      }
+
+
+      #our-package {
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      #our-package h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        background-color: gray;
+        padding: 25px;
+      }
+
+      #packages {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+      }
+
+      #package-info {
+        padding: 20px;
+        border-radius: 5px;
+        
+      }
+
+      #package-info h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      #package-info p {
+        font-size: 16px;
+      }
+
+
+      #cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #cta-btn{
+      	padding: 25px;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="#home" class="header-logo"><b><i>Travelites</i></b></a>
+      <nav>
+      	
+        <a href="#home">Home</a>
+        <a href="#our-package">Our Package</a>
+        <a href="cta">Call Us</a>
+    
+      </nav>
+    </header>
+
+    <main>
+      <div id="home">
+        <div id="opening-text">
+          <h1>Your Trusted Travel Agent</h1>
+          <br />
+          <p>Your happiness is our happiness</p>
+        </div>
+
+        <div id="home-content">
+
+          <div id="testi-form">
+            <section id="testimonial">
+              <div id="testi-slider">
+              <img class ="img-testi"src="assets/testi1.jpg"/>
+              <img class ="img-testi"src="assets/testi2.jpeg"/>
+              <img class ="img-testi"src="assets/testi3.jpg"/>
+            </div>
+              <p><i>"Liburan jadi menyenangkan bersama Travel Agentku"</i></p>
+              <div id="testi-profile">
+                <img />
+                <div id="testi-profile-text">
+                  <h3>Florence Hughes</h3>
+                  <p><i>Ibu Rumah Tangga,28</i></p>
+                </div>
+              </div>
+            </section>
+
+            <aside id="form">
+              <div id="form-text">
+                <h3>Contact Us</h3>
+                <p>
+                  Sales akan menghubungi anda 1x24 jam<br />setelah data kami
+                  terima
+                </p>
+              </div>
+  
+              <div id="form-input">
+              <form action="" method="post">
+                <label for="name">Your Name:</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="First and Last Name"
+                /><br />
+  
+                <label for="email">Email Address:</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@email.com"
+                /><br />
+  
+                <p>What are you interested in?</p>
+                <select id="interest">
+                  <option value="" disabled selected hidden>Select Option</option>
+                  <option value="Bali">Bali</option>
+                  <option value="Bandung">Bandung</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Jakarta">Jakarta</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Singapore">Singapore</option>
+                </select>
+                <br />
+  
+                <button id="send-btn"><b>SEND</b></button>
+              </div>
+              </form>
+            </aside>
+          </div>
+
+          <article id="benefits">
+            <h3>
+              Use this space to provide users with more information<br />about
+              your offer.Consider it a follow-up to your headline<br />
+              and explain the benefits of your service or product
+            </h3>
+            <ol type="1">
+              <li>
+                Your first feature, written in the form of a benefit
+                statement.
+              </li>
+              <li>
+                Your second feature, written in the form of a benefit
+                statement.
+              </li>
+              <li>
+                Your third feature, written in the form of a benefit
+                statement.
+              </li>
+            </ol>
+          </article>
+
+         
+        </div>
+      </div>
+
+      <div id="our-package">
+        <h1>Our Package</h1>
+
+        <div id="packages">
+          <div id="package-info">
+            <h2>Bali</h2>
+            <p>
+              Travel dan wisata di Bali.<br />Kunjungi cagar budaya dan<br />kuliner
+              yang menarik
+            </p>
+          </div>
+          <div id="package-info">
+            <h2>Japan</h2>
+            <p>
+              Travel dan wisata di Japan.<br />Kunjungi cagar budaya dan<br />kuliner
+              yang menarik
+            </p>
+          </div>
+          <div id="package-info">
+            <h2>Singapore</h2>
+            <p>
+              Travel dan wisata di Singapore.<br />Kunjungi cagar budaya dan<br />kuliner
+              yang menarik
+            </p>
+          </div>
+
+          <div id="package-info">
+            <h2>Bandung</h2>
+            <p>
+              Travel dan wisata di Bandung.<br />Kunjungi cagar budaya dan<br />kuliner
+              yang menarik
+            </p>
+          </div>
+          <div id="package-info">
+            <h2>Surabaya</h2>
+            <p>
+              Travel dan wisata di Surabaya.<br />Kunjungi cagar budaya dan<br />kuliner
+              yang menarik
+            </p>
+          </div>
+          <div id="package-info">
+            <h2>Korea</h2>
+            <p>
+              Travel dan wisata di Korea.<br />Kunjungi cagar budaya dan<br />kuliner
+              yang menarik
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="cta">
+        <h1>What Are You Waiting For?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+        <button id="cta-btn"><b>CONTACT US</b></button>
+      </div>
+    </main>
+  </body>
+</html>
+
